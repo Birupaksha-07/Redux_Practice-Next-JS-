@@ -1,5 +1,6 @@
 import { createSlice , current} from "@reduxjs/toolkit";
 
+
 const UserSlice = createSlice({
     name:'users',
     initialState:JSON.parse(localStorage.getItem("Users"))?JSON.parse(localStorage.getItem("Users")):[],
@@ -11,12 +12,14 @@ const UserSlice = createSlice({
             localStorage.setItem("Users", userData);
         },
         removeUser:(state, action)=>{
-            state.splice(action.payload,1)
+            state.splice(action.payload,1);
+            let userData = JSON.stringify(current(state));
+            localStorage.setItem("Users", userData);
         },
         deleteAllUser:(state)=>{
             localStorage.removeItem("Users");
             return state = []
-        }
+        },
     }
 })
 

@@ -109,3 +109,30 @@ a {
   margin-top: 30px !important;
   background-color: lightblue;
 }
+
+.countDivP{
+  margin-top: 200px;
+  display: flex;
+  justify-content: center;
+}
+.countDiv{
+  display: flex;
+  width: 200px;
+  padding: 20px;
+  justify-content: space-between;
+  align-items: center;
+  background-color:skyblue;
+  border-radius: 12px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.countDiv h2{
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:rgb(92, 107, 107);
+  border-radius: 50%;
+  cursor: pointer;
+  color: white;
+}

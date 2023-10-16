@@ -5,11 +5,6 @@ import { useDispatch, useSelector } from "react-redux";
 import { fetchSingleBlogData } from "@/redux/slice/blogSlice";
 
 function Blogs({ params }) {
-  // const getdata = async () => {
-  //   const res = await fetch(`https://jsonplaceholder.typicode.com/posts/${params.blogs}`);
-  //   const data = await res.json();
-  //   setUserData(data);
-  // };
   const dispatch = useDispatch();
   const userData = useSelector((state) => {
     return state.blogs.singleBlog;
